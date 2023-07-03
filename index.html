@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lieferando</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body onload="render()">
+    <header>
+        <h1 class="logo">Lieferando</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Login</a></li>
+                <li><a  href="#">Startseite</a></li>
+             </ul>
+        </nav>
+    </header>
+    <div id="content" class="content"></div>
+
+    <div id="box" class="wahrenkorbBox"></div>
+
+    <div onclick="renderBasketModal()" class="wahrenkorb">
+        <img src="img/wahrenkorb.png">
+        <span id="zaehler"></span>
+    </div>
+    <div id="payAlert" class="pay none">
+        <div class="thanks">Vielen Dank für Ihre Bestellung! Wenn Sie weitere Fragen haben oder weitere Unterstützung benötigen, stehe ich Ihnen gerne zur Verfügung.</div>
+    </div>
+    <div id="modal" class="modal none">
+        <div class="close none" onclick="closeModal()">&times;</div>`
+    </div>
+</body>
+</html>
